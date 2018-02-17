@@ -6,13 +6,15 @@ Created on Tue Feb 13 18:23:23 2018
 @author: CLin
 """
 
-drinks = []
+menu = []
 while True:
-    print('Enter the name of the drink' + str(len(drinks)+1) +'(Or enter nothing to stop.)')
-    new_drink= input()
-    if new_drink == '':
+    print('Enter the name of the drink' + str(len(menu)+1) +'(Or enter nothing to stop.)')
+    new_menu= input()
+    if new_menu== '':
         break
-    drinks = drinks + [new_drink] #list concatenation 
+    drinks = menu + [new_menu] #list concatenation 
     print('The availible drinks are:')
-    for name in drinks:
+    for name in menu:
         print(''+name)
+        
+       
